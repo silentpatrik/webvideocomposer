@@ -10,8 +10,8 @@
             <x-partials.card>
                 <x-slot name="title">
                     <a href="{{ route('projects.index') }}" class="mr-4"
-                        ><i class="mr-1 icon ion-md-arrow-back"></i
-                    ></a>
+                    ><i class="mr-1 icon ion-md-arrow-back"></i
+                        ></a>
                 </x-slot>
 
                 <x-form
@@ -50,12 +50,12 @@
                 </x-form>
             </x-partials.card>
 
-            @can('view-any', App\Models\ProjectOption::class)
-            <x-partials.card class="mt-5">
-                <x-slot name="title"> Options </x-slot>
+            @can('view-any', WebVideo\Models\ProjectOption::class)
+                <x-partials.card class="mt-5">
+                    <x-slot name="title"> Options</x-slot>
 
-                <livewire:project-options-detail :project="$project" />
-            </x-partials.card>
+                    <livewire:project-options-detail :project="$project"/>
+                </x-partials.card>
             @endcan
         </div>
     </div>

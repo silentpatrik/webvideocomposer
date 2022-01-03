@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace WebVideo\Models;
 
 use App\Models\Scopes\Searchable;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class Section extends Model
 {

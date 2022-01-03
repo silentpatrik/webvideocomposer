@@ -10,8 +10,8 @@
             <x-partials.card>
                 <x-slot name="title">
                     <a href="{{ route('arguments.index') }}" class="mr-4"
-                        ><i class="mr-1 icon ion-md-arrow-back"></i
-                    ></a>
+                    ><i class="mr-1 icon ion-md-arrow-back"></i
+                        ></a>
                 </x-slot>
 
                 <div class="mt-4 px-4">
@@ -41,11 +41,11 @@
                         @lang('crud.common.back')
                     </a>
 
-                    @can('create', App\Models\Argument::class)
-                    <a href="{{ route('arguments.create') }}" class="button">
-                        <i class="mr-1 icon ion-md-add"></i>
-                        @lang('crud.common.create')
-                    </a>
+                    @can('create', WebVideo\Models\Argument::class)
+                        <a href="{{ route('arguments.create') }}" class="button">
+                            <i class="mr-1 icon ion-md-add"></i>
+                            @lang('crud.common.create')
+                        </a>
                     @endcan
                 </div>
             </x-partials.card>

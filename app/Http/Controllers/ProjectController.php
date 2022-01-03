@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use App\Models\Project;
-use Illuminate\Http\Request;
 use App\Http\Requests\ProjectStoreRequest;
 use App\Http\Requests\ProjectUpdateRequest;
+use App\Models\User;
+use Illuminate\Http\Request;
+use WebVideo\Models\Project;
 
 class ProjectController extends Controller
 {
@@ -60,7 +60,7 @@ class ProjectController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Project $project)
@@ -72,7 +72,7 @@ class ProjectController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, Project $project)
@@ -86,7 +86,7 @@ class ProjectController extends Controller
 
     /**
      * @param \App\Http\Requests\ProjectUpdateRequest $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function update(ProjectUpdateRequest $request, Project $project)
@@ -104,7 +104,7 @@ class ProjectController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Project $project)

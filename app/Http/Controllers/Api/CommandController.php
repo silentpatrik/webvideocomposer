@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\Command;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\CommandResource;
-use App\Http\Resources\CommandCollection;
 use App\Http\Requests\CommandStoreRequest;
 use App\Http\Requests\CommandUpdateRequest;
+use App\Http\Resources\CommandCollection;
+use App\Http\Resources\CommandResource;
+use Illuminate\Http\Request;
+use WebVideo\Models\Command;
 
 class CommandController extends Controller
 {
@@ -46,7 +46,7 @@ class CommandController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Command $command
+     * @param \WebVideo\Models\Command $command
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Command $command)
@@ -58,7 +58,7 @@ class CommandController extends Controller
 
     /**
      * @param \App\Http\Requests\CommandUpdateRequest $request
-     * @param \App\Models\Command $command
+     * @param \WebVideo\Models\Command $command
      * @return \Illuminate\Http\Response
      */
     public function update(CommandUpdateRequest $request, Command $command)
@@ -74,7 +74,7 @@ class CommandController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Command $command
+     * @param \WebVideo\Models\Command $command
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Command $command)

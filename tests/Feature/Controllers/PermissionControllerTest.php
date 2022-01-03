@@ -3,26 +3,14 @@
 namespace Tests\Feature\Controllers;
 
 use App\Models\User;
-use Spatie\Permission\Models\Permission;
-
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Spatie\Permission\Models\Permission;
+use Tests\TestCase;
 
 class PermissionControllerTest extends TestCase
 {
     use RefreshDatabase, WithFaker;
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $this->actingAs(User::factory()->create(['email' => 'admin@admin.com']));
-        
-        $this->seed(\Database\Seeders\PermissionsSeeder::class);
-
-        $this->withoutExceptionHandling();
-    }
 
     /**
      * @test
@@ -128,5 +116,16 @@ class PermissionControllerTest extends TestCase
         $response->assertRedirect(route('permissions.index'));
 
         $this->assertDeleted($permission);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->actingAs(User::factory()->create(['email' => 'admin@admin.com']));
+
+        $this->seed(\WebVideo\Database\Seeders\PermissionsSeeder::class);
+
+        $this->withoutExceptionHandling();
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Database\Seeders;
+namespace WebVideo\Database\Seeders;
 
-use App\Models\Page;
 use Illuminate\Database\Seeder;
+use WebVideo\Models\Page;
 
 class PageSeeder extends Seeder
 {

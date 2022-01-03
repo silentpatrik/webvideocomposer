@@ -32,14 +32,14 @@
                             </form>
                         </div>
                         <div class="md:w-1/2 text-right">
-                            @can('create', App\Models\Command::class)
-                            <a
-                                href="{{ route('commands.create') }}"
-                                class="button button-primary"
-                            >
-                                <i class="mr-1 icon ion-md-add"></i>
-                                @lang('crud.common.create')
-                            </a>
+                            @can('create', WebVideo\Models\Command::class)
+                                <a
+                                    href="{{ route('commands.create') }}"
+                                    class="button button-primary"
+                                >
+                                    <i class="mr-1 icon ion-md-add"></i>
+                                    @lang('crud.common.create')
+                                </a>
                             @endcan
                         </div>
                     </div>
@@ -48,24 +48,24 @@
                 <div class="block w-full overflow-auto scrolling-touch">
                     <table class="w-full max-w-full mb-4 bg-transparent">
                         <thead class="text-gray-700">
-                            <tr>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.commands.inputs.executable')
-                                </th>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.commands.inputs.title')
-                                </th>
-                                <th class="px-4 py-3 text-right">
-                                    @lang('crud.commands.inputs.parallel')
-                                </th>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.commands.inputs.enabled')
-                                </th>
-                                <th></th>
-                            </tr>
+                        <tr>
+                            <th class="px-4 py-3 text-left">
+                                @lang('crud.commands.inputs.executable')
+                            </th>
+                            <th class="px-4 py-3 text-left">
+                                @lang('crud.commands.inputs.title')
+                            </th>
+                            <th class="px-4 py-3 text-right">
+                                @lang('crud.commands.inputs.parallel')
+                            </th>
+                            <th class="px-4 py-3 text-left">
+                                @lang('crud.commands.inputs.enabled')
+                            </th>
+                            <th></th>
+                        </tr>
                         </thead>
                         <tbody class="text-gray-600">
-                            @forelse($commands as $command)
+                        @forelse($commands as $command)
                             <tr class="hover:bg-gray-50">
                                 <td class="px-4 py-3 text-left">
                                     {{ $command->executable ?? '-' }}
@@ -93,71 +93,71 @@
                                         "
                                     >
                                         @can('update', $command)
-                                        <a
-                                            href="{{ route('commands.edit', $command) }}"
-                                            class="mr-1"
-                                        >
-                                            <button
-                                                type="button"
-                                                class="button"
+                                            <a
+                                                href="{{ route('commands.edit', $command) }}"
+                                                class="mr-1"
                                             >
-                                                <i
-                                                    class="icon ion-md-create"
-                                                ></i>
-                                            </button>
-                                        </a>
+                                                <button
+                                                    type="button"
+                                                    class="button"
+                                                >
+                                                    <i
+                                                        class="icon ion-md-create"
+                                                    ></i>
+                                                </button>
+                                            </a>
                                         @endcan @can('view', $command)
-                                        <a
-                                            href="{{ route('commands.show', $command) }}"
-                                            class="mr-1"
-                                        >
-                                            <button
-                                                type="button"
-                                                class="button"
+                                            <a
+                                                href="{{ route('commands.show', $command) }}"
+                                                class="mr-1"
                                             >
-                                                <i class="icon ion-md-eye"></i>
-                                            </button>
-                                        </a>
+                                                <button
+                                                    type="button"
+                                                    class="button"
+                                                >
+                                                    <i class="icon ion-md-eye"></i>
+                                                </button>
+                                            </a>
                                         @endcan @can('delete', $command)
-                                        <form
-                                            action="{{ route('commands.destroy', $command) }}"
-                                            method="POST"
-                                            onsubmit="return confirm('{{ __('crud.common.are_you_sure') }}')"
-                                        >
-                                            @csrf @method('DELETE')
-                                            <button
-                                                type="submit"
-                                                class="button"
+                                            <form
+                                                action="{{ route('commands.destroy', $command) }}"
+                                                method="POST"
+                                                onsubmit="return confirm('{{ __('crud.common.are_you_sure') }}')"
                                             >
-                                                <i
-                                                    class="
+                                                @csrf @method('DELETE')
+                                                <button
+                                                    type="submit"
+                                                    class="button"
+                                                >
+                                                    <i
+                                                        class="
                                                         icon
                                                         ion-md-trash
                                                         text-red-600
                                                     "
-                                                ></i>
-                                            </button>
-                                        </form>
+                                                    ></i>
+                                                </button>
+                                            </form>
                                         @endcan
                                     </div>
                                 </td>
                             </tr>
-                            @empty
+                        @empty
                             <tr>
                                 <td colspan="5">
                                     @lang('crud.common.no_items_found')
                                 </td>
                             </tr>
-                            @endforelse
+                        @endforelse
                         </tbody>
                         <tfoot>
-                            <tr>
-                                <td colspan="5">
-                                    <div class="mt-10 px-4">
-                                        {!! $commands->render() !!}
-                                    </div>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td colspan="5">
+                                <div class="mt-10 px-4">
+                                    {!! $commands->render() !!}
+                                </div>
+                            </td>
+                        </tr>
                         </tfoot>
                     </table>
                 </div>

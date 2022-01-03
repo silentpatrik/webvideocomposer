@@ -34,11 +34,26 @@ return [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
-
+        'render_temporary' => [
+            'driver' => 'local',
+            'root' => storage_path('render/tempdisk'),
+            'visibility' => 'public',
+        ],
+        'render_results' => ['driver' => 'local',
+            'root' => storage_path('render/results'),
+            'url' => env('APP_URL') . '/results',
+            'visibility' => 'public',
+        ],
+        'render_software' => [
+            'driver' => 'local',
+            'root' => storage_path('render/software'),
+            'url' => env('APP_URL') . '/software',
+            'visibility' => 'public',
+        ],
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
         ],
 

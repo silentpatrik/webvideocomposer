@@ -1,9 +1,9 @@
 <?php
 
-namespace Database\Seeders;
+namespace database\seeders;
 
-use App\Models\Section;
 use Illuminate\Database\Seeder;
+use WebVideo\Models\Section;
 
 class SectionSeeder extends Seeder
 {

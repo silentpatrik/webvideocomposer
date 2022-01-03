@@ -3,8 +3,8 @@
 namespace App\Models;
 
 use App\Models\Scopes\Searchable;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class Page extends Model
 {
@@ -20,8 +20,8 @@ class Page extends Model
         return $this->hasMany(Section::class);
     }
 
-    public function sections()
+    /*public function sections()
     {
         return $this->belongsToMany(Section::class);
-    }
+    }*/
 }

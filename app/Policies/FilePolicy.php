@@ -2,9 +2,9 @@
 
 namespace App\Policies;
 
-use App\Models\File;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use WebVideo\Models\File;
 
 class FilePolicy
 {
@@ -13,7 +13,7 @@ class FilePolicy
     /**
      * Determine whether the file can view any models.
      *
-     * @param  App\Models\User  $user
+     * @param App\Models\User $user
      * @return mixed
      */
     public function viewAny(User $user)
@@ -24,8 +24,8 @@ class FilePolicy
     /**
      * Determine whether the file can view the model.
      *
-     * @param  App\Models\User  $user
-     * @param  App\Models\File  $model
+     * @param App\Models\User $user
+     * @param App\Models\File $model
      * @return mixed
      */
     public function view(User $user, File $model)
@@ -36,7 +36,7 @@ class FilePolicy
     /**
      * Determine whether the file can create models.
      *
-     * @param  App\Models\User  $user
+     * @param App\Models\User $user
      * @return mixed
      */
     public function create(User $user)
@@ -47,8 +47,8 @@ class FilePolicy
     /**
      * Determine whether the file can update the model.
      *
-     * @param  App\Models\User  $user
-     * @param  App\Models\File  $model
+     * @param App\Models\User $user
+     * @param App\Models\File $model
      * @return mixed
      */
     public function update(User $user, File $model)
@@ -59,8 +59,8 @@ class FilePolicy
     /**
      * Determine whether the file can delete the model.
      *
-     * @param  App\Models\User  $user
-     * @param  App\Models\File  $model
+     * @param App\Models\User $user
+     * @param App\Models\File $model
      * @return mixed
      */
     public function delete(User $user, File $model)
@@ -71,8 +71,8 @@ class FilePolicy
     /**
      * Determine whether the user can delete multiple instances of the model.
      *
-     * @param  App\Models\User  $user
-     * @param  App\Models\File  $model
+     * @param App\Models\User $user
+     * @param App\Models\File $model
      * @return mixed
      */
     public function deleteAny(User $user)
@@ -83,8 +83,8 @@ class FilePolicy
     /**
      * Determine whether the file can restore the model.
      *
-     * @param  App\Models\User  $user
-     * @param  App\Models\File  $model
+     * @param App\Models\User $user
+     * @param App\Models\File $model
      * @return mixed
      */
     public function restore(User $user, File $model)
@@ -95,8 +95,8 @@ class FilePolicy
     /**
      * Determine whether the file can permanently delete the model.
      *
-     * @param  App\Models\User  $user
-     * @param  App\Models\File  $model
+     * @param App\Models\User $user
+     * @param App\Models\File $model
      * @return mixed
      */
     public function forceDelete(User $user, File $model)

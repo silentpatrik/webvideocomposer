@@ -1,17 +1,18 @@
 <?php
+
 namespace App\Http\Controllers\Api;
 
-use App\Models\Project;
-use Illuminate\Http\Request;
-use App\Models\RenderPipeline;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ProjectCollection;
+use Illuminate\Http\Request;
+use WebVideo\Models\Project;
+use WebVideo\Models\RenderPipeline;
 
 class RenderPipelineProjectsController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request, RenderPipeline $renderPipeline)
@@ -31,15 +32,16 @@ class RenderPipelineProjectsController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function store(
-        Request $request,
+        Request        $request,
         RenderPipeline $renderPipeline,
-        Project $project
-    ) {
+        Project        $project
+    )
+    {
         $this->authorize('update', $renderPipeline);
 
         $renderPipeline->projects()->syncWithoutDetaching([$project->id]);
@@ -49,15 +51,16 @@ class RenderPipelineProjectsController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function destroy(
-        Request $request,
+        Request        $request,
         RenderPipeline $renderPipeline,
-        Project $project
-    ) {
+        Project        $project
+    )
+    {
         $this->authorize('update', $renderPipeline);
 
         $renderPipeline->projects()->detach($project);

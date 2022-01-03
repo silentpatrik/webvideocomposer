@@ -10,8 +10,8 @@
             <x-partials.card>
                 <x-slot name="title">
                     <a href="{{ route('render-pipelines.index') }}" class="mr-4"
-                        ><i class="mr-1 icon ion-md-arrow-back"></i
-                    ></a>
+                    ><i class="mr-1 icon ion-md-arrow-back"></i
+                        ></a>
                 </x-slot>
 
                 <div class="mt-4 px-4">
@@ -38,26 +38,26 @@
                         @lang('crud.common.back')
                     </a>
 
-                    @can('create', App\Models\RenderPipeline::class)
-                    <a
-                        href="{{ route('render-pipelines.create') }}"
-                        class="button"
-                    >
-                        <i class="mr-1 icon ion-md-add"></i>
-                        @lang('crud.common.create')
-                    </a>
+                    @can('create', WebVideo\Models\RenderPipeline::class)
+                        <a
+                            href="{{ route('render-pipelines.create') }}"
+                            class="button"
+                        >
+                            <i class="mr-1 icon ion-md-add"></i>
+                            @lang('crud.common.create')
+                        </a>
                     @endcan
                 </div>
             </x-partials.card>
 
-            @can('view-any', App\Models\Command::class)
-            <x-partials.card class="mt-5">
-                <x-slot name="title"> Commands </x-slot>
+            @can('view-any', WebVideo\Models\Command::class)
+                <x-partials.card class="mt-5">
+                    <x-slot name="title"> Commands</x-slot>
 
-                <livewire:render-pipeline-commands-detail
-                    :renderPipeline="$renderPipeline"
-                />
-            </x-partials.card>
+                    <livewire:render-pipeline-commands-detail
+                        :renderPipeline="$renderPipeline"
+                    />
+                </x-partials.card>
             @endcan
         </div>
     </div>

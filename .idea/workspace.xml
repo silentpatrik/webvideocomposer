@@ -5,8 +5,128 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d152bcc-fce3-4757-a048-6f9f41584da0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Factories/CommandFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KOD/Patrikgrinsvall/php-package-template/.github/workflows/merge.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KOD/Patrikgrinsvall/php-package-template/.github/workflows/merge.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KOD/Patrikgrinsvall/php-package-template/.github/workflows/prune.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KOD/Patrikgrinsvall/php-package-template/.github/workflows/prune.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KOD/Patrikgrinsvall/php-package-template/.github/workflows/release.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KOD/Patrikgrinsvall/php-package-template/.github/workflows/release.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KOD/Patrikgrinsvall/php-package-template/.github/workflows/renew.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KOD/Patrikgrinsvall/php-package-template/.github/workflows/renew.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WebVideoComposer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WebVideoComposer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ArgumentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ArgumentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommandArgumentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommandArgumentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommandController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommandRenderPipelinesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommandRenderPipelinesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PageSectionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PageSectionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectProjectOptionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectProjectOptionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectRenderPipelinesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectRenderPipelinesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/RenderPipelineCommandsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/RenderPipelineCommandsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/RenderPipelineController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/RenderPipelineController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/RenderPipelineProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/RenderPipelineProjectsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SectionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SectionPagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SectionPagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SectionSectionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SectionSectionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArgumentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArgumentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommandController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RenderPipelineController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RenderPipelineController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SectionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CommandArgumentsDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CommandArgumentsDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/PageSectionsDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/PageSectionsDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ProjectOptionsDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ProjectOptionsDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/RenderPipelineCommandsDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/RenderPipelineCommandsDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Argument.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Models/Argument.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Models/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Models/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Models/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ProjectOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Models/ProjectOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/RenderPipeline.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Models/RenderPipeline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ArgumentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ArgumentPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/CommandPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/CommandPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/FilePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/FilePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/PagePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/PagePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ProjectOptionPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ProjectOptionPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ProjectPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ProjectPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/RenderPipelinePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/RenderPipelinePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/SectionPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/SectionPolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ArgumentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Factories/ArgumentFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CommandFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/FileFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Factories/FileFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PageFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Factories/ProjectFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProjectOptionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Factories/ProjectOptionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/RenderPipelineFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Factories/RenderPipelineFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/SectionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SectionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_12_25_000009_create_pages_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ArgumentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Seeders/ArgumentSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/CommandSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Seeders/CommandSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/FileSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Seeders/FileSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PageSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PermissionsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Seeders/PermissionsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProjectOptionSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Seeders/ProjectOptionSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Seeders/ProjectSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/RenderPipelineSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src/Database/Seeders/RenderPipelineSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/SectionSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/SectionSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/faker-fantasy/person.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/arguments/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/arguments/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/arguments/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/arguments/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/commands/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/commands/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/commands/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/commands/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/commands/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/commands/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/pages/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/pages/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/pages/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/pages/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/projects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/projects/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/projects/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/projects/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/projects/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/render_pipelines/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/render_pipelines/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/render_pipelines/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/render_pipelines/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/render_pipelines/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/render_pipelines/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/sections/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/sections/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/sections/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/sections/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/command-arguments-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/command-arguments-detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/page-sections-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/page-sections-detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/project-options-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/project-options-detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/render-pipeline-commands-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/render-pipeline-commands-detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/ArgumentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/ArgumentTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/CommandArgumentsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/CommandArgumentsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/CommandRenderPipelinesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/CommandRenderPipelinesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/CommandTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/CommandTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/PageSectionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/PageSectionsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/PageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/PageTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/ProjectProjectOptionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/ProjectProjectOptionsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/ProjectRenderPipelinesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/ProjectRenderPipelinesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/ProjectTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/ProjectTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/RenderPipelineCommandsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/RenderPipelineCommandsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/RenderPipelineProjectsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/RenderPipelineProjectsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/RenderPipelineTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/RenderPipelineTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/SectionPagesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/SectionPagesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/SectionSectionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/SectionSectionsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Api/SectionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Api/SectionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Controllers/ArgumentControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Controllers/ArgumentControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Controllers/CommandControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Controllers/CommandControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Controllers/PageControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Controllers/PageControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Controllers/PermissionControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Controllers/PermissionControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Controllers/ProjectControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Controllers/ProjectControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Controllers/RenderPipelineControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Controllers/RenderPipelineControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Controllers/RoleControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Controllers/RoleControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Controllers/SectionControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Controllers/SectionControllerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +135,15 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="composer.json" />
       </list>
     </option>
   </component>
@@ -38,6 +161,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="JiraServerManager">
+    <selected>-1</selected>
+    <servers />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,143 +172,162 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
-  <component name="PhpWebServerValidation" path_to_validation_script="C:\Users\user\Documents\Code\GraphicsProjects\WebVideoComposer\laravel\public" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost:8000" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1">
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$/public" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost:8000" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
-      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
-      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/league/config" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/vendor/laravel/jetstream" />
+      <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/pestphp/pest" />
+      <path value="$PROJECT_DIR$/vendor/pestphp/pest-plugin" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
-      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
-      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
-      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
-      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
-      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
-      <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/vendor/opis/closure" />
-      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
-      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
-      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
-      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
-      <path value="$PROJECT_DIR$/vendor/brick/math" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
-      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/vendor/nette/schema" />
-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
-      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
-      <path value="$PROJECT_DIR$/vendor/nette/utils" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
-      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
-      <path value="$PROJECT_DIR$/vendor/league/config" />
-      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
-      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/deerdama/console-zoo-laravel" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
-      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
-      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
-      <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
-      <path value="$PROJECT_DIR$/vendor/laravel/jetstream" />
-      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
-      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
-      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
-      <path value="$PROJECT_DIR$/vendor/jenssegers/agent" />
-      <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-icons" />
-      <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-heroicons" />
+      <path value="$PROJECT_DIR$/vendor/filament/tables" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/filament/filament" />
+      <path value="$PROJECT_DIR$/vendor/filament/forms" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/akaunting/laravel-money" />
+      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
       <path value="$PROJECT_DIR$/vendor/danharrin/livewire-rate-limiting" />
       <path value="$PROJECT_DIR$/vendor/danharrin/date-format-converter" />
-      <path value="$PROJECT_DIR$/vendor/akaunting/laravel-money" />
-      <path value="$PROJECT_DIR$/vendor/filament/filament" />
-      <path value="$PROJECT_DIR$/vendor/filament/tables" />
-      <path value="$PROJECT_DIR$/vendor/filament/forms" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/jenssegers/agent" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/silentridge/web-video" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-heroicons" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-icons" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
     </include_path>
   </component>
   <component name="ProjectId" id="22mUAiD5ljavd9kmjrJaH9vLW1l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -193,18 +339,41 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="code.cleanup.on.save" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JavaScript&#10;JSON" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../PHP/php-8.1.0/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/SilentRidge/WebVideo/Database/Migrations" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="rearrange.code.on.save" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHP Built-in Web Server.serve">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/SilentRidge/WebVideo/Database/Migrations" />
+      <recent name="$PROJECT_DIR$/packages/silentridge" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/SilentRidge/WebVideo/src" />
+      <recent name="$PROJECT_DIR$/database/factories" />
+      <recent name="$PROJECT_DIR$/database/migrations" />
+      <recent name="$PROJECT_DIR$/database/seeders" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml" type="PestRunConfigurationType">
+      <option name="pestRunnerSettings">
+        <PestRunner scope="ConfigurationFile" />
+      </option>
+      <option name="runnerSettings">
+        <PhpTestRunnerSettings scope="ConfigurationFile" />
+      </option>
       <method v="2" />
     </configuration>
     <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$S" port="8000">
@@ -220,6 +389,7 @@
       <item itemvalue="PHP Built-in Web Server.serve" />
       <item itemvalue="PHP Remote Debug.Unnamed" />
       <item itemvalue="PHPUnit.phpunit.xml" />
+      <item itemvalue="Pest.phpunit.xml" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -233,6 +403,7 @@
       <workItem from="1640442118279" duration="685000" />
       <workItem from="1640442823943" duration="4756000" />
       <workItem from="1641057156263" duration="1087000" />
+      <workItem from="1641135093717" duration="26688000" />
     </task>
     <servers />
   </component>

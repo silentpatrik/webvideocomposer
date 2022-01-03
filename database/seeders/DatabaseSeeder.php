@@ -3,6 +3,15 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use WebVideo\Database\Seeders\ArgumentSeeder;
+use WebVideo\Database\Seeders\CommandSeeder;
+use WebVideo\Database\Seeders\FileSeeder;
+use WebVideo\Database\Seeders\PageSeeder;
+use WebVideo\Database\Seeders\PermissionsSeeder;
+use WebVideo\Database\Seeders\ProjectOptionSeeder;
+use WebVideo\Database\Seeders\ProjectSeeder;
+use WebVideo\Database\Seeders\RenderPipelineSeeder;
+use WebVideo\Database\Seeders\SectionSeeder;
 
 class DatabaseSeeder extends Seeder
 {

@@ -2,10 +2,10 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Page;
-use Livewire\Component;
-use App\Models\Section;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Livewire\Component;
+use WebVideo\Models\Page;
+use WebVideo\Models\Section;
 
 class PageSectionsDetail extends Component
 {

@@ -3,31 +3,16 @@
 namespace Tests\Feature\Api;
 
 use App\Models\User;
-use App\Models\Command;
-
-use App\Models\RenderPipeline;
-
-use Tests\TestCase;
-use Laravel\Sanctum\Sanctum;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Laravel\Sanctum\Sanctum;
+use Tests\TestCase;
+use WebVideo\Models\Command;
+use WebVideo\Models\RenderPipeline;
 
 class CommandTest extends TestCase
 {
     use RefreshDatabase, WithFaker;
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $user = User::factory()->create(['email' => 'admin@admin.com']);
-
-        Sanctum::actingAs($user, [], 'web');
-
-        $this->seed(\Database\Seeders\PermissionsSeeder::class);
-
-        $this->withoutExceptionHandling();
-    }
 
     /**
      * @test
@@ -104,5 +89,18 @@ class CommandTest extends TestCase
         $this->assertDeleted($command);
 
         $response->assertNoContent();
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $user = User::factory()->create(['email' => 'admin@admin.com']);
+
+        Sanctum::actingAs($user, [], 'web');
+
+        $this->seed(\WebVideo\Database\Seeders\PermissionsSeeder::class);
+
+        $this->withoutExceptionHandling();
     }
 }

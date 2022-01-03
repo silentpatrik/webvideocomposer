@@ -3,30 +3,18 @@
 namespace Tests\Feature\Api;
 
 use App\Models\User;
-use App\Models\Command;
-use App\Models\RenderPipeline;
-
-use Tests\TestCase;
-use Laravel\Sanctum\Sanctum;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Hash;
+use Laravel\Sanctum\Sanctum;
+use Tests\TestCase;
+use WebVideo\Database\Seeders\PermissionsSeeder;
+use WebVideo\Models\Command;
+use WebVideo\Models\RenderPipeline;
 
 class RenderPipelineCommandsTest extends TestCase
 {
     use RefreshDatabase, WithFaker;
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $user = User::factory()->create(['email' => 'admin@admin.com']);
-
-        Sanctum::actingAs($user, [], 'web');
-
-        $this->seed(\Database\Seeders\PermissionsSeeder::class);
-
-        $this->withoutExceptionHandling();
-    }
 
     /**
      * @test
@@ -93,5 +81,18 @@ class RenderPipelineCommandsTest extends TestCase
                 ->where('commands.id', $command->id)
                 ->exists()
         );
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $user = User::factory()->create(['email' => 'user@localhost', 'password' => Hash::make('asdasd')]);
+
+        Sanctum::actingAs($user, [], 'web');
+
+        $this->seed(PermissionsSeeder::class);
+
+        $this->withoutExceptionHandling();
     }
 }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Page;
-use Illuminate\Http\Request;
 use App\Http\Requests\PageStoreRequest;
 use App\Http\Requests\PageUpdateRequest;
+use Illuminate\Http\Request;
+use WebVideo\Models\Page;
 
 class PageController extends Controller
 {
@@ -57,7 +57,7 @@ class PageController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Page $page
+     * @param \WebVideo\Models\Page $page
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Page $page)
@@ -69,7 +69,7 @@ class PageController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Page $page
+     * @param \WebVideo\Models\Page $page
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, Page $page)
@@ -81,7 +81,7 @@ class PageController extends Controller
 
     /**
      * @param \App\Http\Requests\PageUpdateRequest $request
-     * @param \App\Models\Page $page
+     * @param \WebVideo\Models\Page $page
      * @return \Illuminate\Http\Response
      */
     public function update(PageUpdateRequest $request, Page $page)
@@ -99,7 +99,7 @@ class PageController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Page $page
+     * @param \WebVideo\Models\Page $page
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Page $page)

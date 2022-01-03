@@ -1,0 +1,71 @@
+{
+    "name": "silentridge/web-video",
+    "description": "Package for web video render",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "patrik grinsvall",
+            "email": "patrik@silentridge.io"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "deerdama/console-zoo-laravel": "^1.4",
+        "filament/filament": "^2.7",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "laravel/framework": "^8.75"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.21",
+        "spatie/laravel-package-tools": "^1.10",
+        "barryvdh/laravel-ide-helper": "^2.10",
+        "fakerphp/faker": "^1.9.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebVideo\\": "src/",
+            "SilentRidge\\WebVideo\\": "src/",
+            "SilentRidge\\WebVideo\\Database\\Seeders\\": "src/Database/Seeders/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php artisan manager:help"
+        ],
+        "post-create-project-cmd": [
+            "@php artisan manager:install"
+        ],
+        "scripts": {
+            "test": "vendor/bin/pest"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WebVideo\\ManagerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dev",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false
+}

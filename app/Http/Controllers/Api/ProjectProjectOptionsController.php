@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\Project;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\ProjectOptionResource;
 use App\Http\Resources\ProjectOptionCollection;
+use App\Http\Resources\ProjectOptionResource;
+use Illuminate\Http\Request;
+use WebVideo\Models\Project;
 
 class ProjectProjectOptionsController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request, Project $project)
@@ -32,7 +32,7 @@ class ProjectProjectOptionsController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, Project $project)

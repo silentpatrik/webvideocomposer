@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Section;
-use Illuminate\Http\Request;
 use App\Http\Requests\SectionStoreRequest;
 use App\Http\Requests\SectionUpdateRequest;
+use Illuminate\Http\Request;
+use WebVideo\Models\Section;
 
 class SectionController extends Controller
 {
@@ -57,7 +57,7 @@ class SectionController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Section $section)
@@ -69,7 +69,7 @@ class SectionController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, Section $section)
@@ -81,7 +81,7 @@ class SectionController extends Controller
 
     /**
      * @param \App\Http\Requests\SectionUpdateRequest $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function update(SectionUpdateRequest $request, Section $section)
@@ -99,7 +99,7 @@ class SectionController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Section $section)

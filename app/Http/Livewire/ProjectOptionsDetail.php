@@ -2,10 +2,10 @@
 
 namespace App\Http\Livewire;
 
-use Livewire\Component;
-use App\Models\Project;
-use App\Models\ProjectOption;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Livewire\Component;
+use WebVideo\Models\Project;
+use WebVideo\Models\ProjectOption;
 
 class ProjectOptionsDetail extends Component
 {

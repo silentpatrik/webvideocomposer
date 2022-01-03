@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\RenderPipeline;
 use App\Http\Requests\RenderPipelineStoreRequest;
 use App\Http\Requests\RenderPipelineUpdateRequest;
+use Illuminate\Http\Request;
+use WebVideo\Models\RenderPipeline;
 
 class RenderPipelineController extends Controller
 {
@@ -60,7 +60,7 @@ class RenderPipelineController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, RenderPipeline $renderPipeline)
@@ -72,7 +72,7 @@ class RenderPipelineController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, RenderPipeline $renderPipeline)
@@ -84,13 +84,14 @@ class RenderPipelineController extends Controller
 
     /**
      * @param \App\Http\Requests\RenderPipelineUpdateRequest $request
-     * @param \App\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
      * @return \Illuminate\Http\Response
      */
     public function update(
         RenderPipelineUpdateRequest $request,
-        RenderPipeline $renderPipeline
-    ) {
+        RenderPipeline              $renderPipeline
+    )
+    {
         $this->authorize('update', $renderPipeline);
 
         $validated = $request->validated();
@@ -104,7 +105,7 @@ class RenderPipelineController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, RenderPipeline $renderPipeline)

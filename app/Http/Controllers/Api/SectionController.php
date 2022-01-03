@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\Section;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\SectionResource;
-use App\Http\Resources\SectionCollection;
 use App\Http\Requests\SectionStoreRequest;
 use App\Http\Requests\SectionUpdateRequest;
+use App\Http\Resources\SectionCollection;
+use App\Http\Resources\SectionResource;
+use Illuminate\Http\Request;
+use WebVideo\Models\Section;
 
 class SectionController extends Controller
 {
@@ -46,7 +46,7 @@ class SectionController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Section $section)
@@ -58,7 +58,7 @@ class SectionController extends Controller
 
     /**
      * @param \App\Http\Requests\SectionUpdateRequest $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function update(SectionUpdateRequest $request, Section $section)
@@ -74,7 +74,7 @@ class SectionController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Section $section)

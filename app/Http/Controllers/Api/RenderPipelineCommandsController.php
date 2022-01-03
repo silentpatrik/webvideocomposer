@@ -1,17 +1,18 @@
 <?php
+
 namespace App\Http\Controllers\Api;
 
-use App\Models\Command;
-use Illuminate\Http\Request;
-use App\Models\RenderPipeline;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\CommandCollection;
+use Illuminate\Http\Request;
+use WebVideo\Models\Command;
+use WebVideo\Models\RenderPipeline;
 
 class RenderPipelineCommandsController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request, RenderPipeline $renderPipeline)
@@ -31,15 +32,16 @@ class RenderPipelineCommandsController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
-     * @param \App\Models\Command $command
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\Command $command
      * @return \Illuminate\Http\Response
      */
     public function store(
-        Request $request,
+        Request        $request,
         RenderPipeline $renderPipeline,
-        Command $command
-    ) {
+        Command        $command
+    )
+    {
         $this->authorize('update', $renderPipeline);
 
         $renderPipeline->commands()->syncWithoutDetaching([$command->id]);
@@ -49,15 +51,16 @@ class RenderPipelineCommandsController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\RenderPipeline $renderPipeline
-     * @param \App\Models\Command $command
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\Command $command
      * @return \Illuminate\Http\Response
      */
     public function destroy(
-        Request $request,
+        Request        $request,
         RenderPipeline $renderPipeline,
-        Command $command
-    ) {
+        Command        $command
+    )
+    {
         $this->authorize('update', $renderPipeline);
 
         $renderPipeline->commands()->detach($command);

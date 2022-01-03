@@ -10,8 +10,8 @@
             <x-partials.card>
                 <x-slot name="title">
                     <a href="{{ route('commands.index') }}" class="mr-4"
-                        ><i class="mr-1 icon ion-md-arrow-back"></i
-                    ></a>
+                    ><i class="mr-1 icon ion-md-arrow-back"></i
+                        ></a>
                 </x-slot>
 
                 <div class="mt-4 px-4">
@@ -47,21 +47,21 @@
                         @lang('crud.common.back')
                     </a>
 
-                    @can('create', App\Models\Command::class)
-                    <a href="{{ route('commands.create') }}" class="button">
-                        <i class="mr-1 icon ion-md-add"></i>
-                        @lang('crud.common.create')
-                    </a>
+                    @can('create', WebVideo\Models\Command::class)
+                        <a href="{{ route('commands.create') }}" class="button">
+                            <i class="mr-1 icon ion-md-add"></i>
+                            @lang('crud.common.create')
+                        </a>
                     @endcan
                 </div>
             </x-partials.card>
 
-            @can('view-any', App\Models\Argument::class)
-            <x-partials.card class="mt-5">
-                <x-slot name="title"> Arguments </x-slot>
+            @can('view-any', WebVideo\Models\Argument::class)
+                <x-partials.card class="mt-5">
+                    <x-slot name="title"> Arguments</x-slot>
 
-                <livewire:command-arguments-detail :command="$command" />
-            </x-partials.card>
+                    <livewire:command-arguments-detail :command="$command"/>
+                </x-partials.card>
             @endcan
         </div>
     </div>

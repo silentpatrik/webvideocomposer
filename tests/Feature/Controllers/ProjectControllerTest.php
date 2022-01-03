@@ -3,28 +3,14 @@
 namespace Tests\Feature\Controllers;
 
 use App\Models\User;
-use App\Models\Project;
-
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Tests\TestCase;
+use WebVideo\Models\Project;
 
 class ProjectControllerTest extends TestCase
 {
     use RefreshDatabase, WithFaker;
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $this->actingAs(
-            User::factory()->create(['email' => 'admin@admin.com'])
-        );
-
-        $this->seed(\Database\Seeders\PermissionsSeeder::class);
-
-        $this->withoutExceptionHandling();
-    }
 
     /**
      * @test
@@ -137,5 +123,18 @@ class ProjectControllerTest extends TestCase
         $response->assertRedirect(route('projects.index'));
 
         $this->assertDeleted($project);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->actingAs(
+            User::factory()->create(['email' => 'admin@admin.com'])
+        );
+
+        $this->seed(\WebVideo\Database\Seeders\PermissionsSeeder::class);
+
+        $this->withoutExceptionHandling();
     }
 }

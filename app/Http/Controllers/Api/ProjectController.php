@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\Project;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\ProjectResource;
-use App\Http\Resources\ProjectCollection;
 use App\Http\Requests\ProjectStoreRequest;
 use App\Http\Requests\ProjectUpdateRequest;
+use App\Http\Resources\ProjectCollection;
+use App\Http\Resources\ProjectResource;
+use Illuminate\Http\Request;
+use WebVideo\Models\Project;
 
 class ProjectController extends Controller
 {
@@ -46,7 +46,7 @@ class ProjectController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Project $project)
@@ -58,7 +58,7 @@ class ProjectController extends Controller
 
     /**
      * @param \App\Http\Requests\ProjectUpdateRequest $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function update(ProjectUpdateRequest $request, Project $project)
@@ -74,7 +74,7 @@ class ProjectController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Project $project)

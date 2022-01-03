@@ -1,10 +1,9 @@
 <?php
 
-namespace Database\Factories;
+namespace WebVideo\Database\Factories;
 
-use App\Models\Page;
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use WebVideo\Models\Page;
 
 class PageFactory extends Factory
 {

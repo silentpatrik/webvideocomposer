@@ -10,8 +10,8 @@
             <x-partials.card>
                 <x-slot name="title">
                     <a href="{{ route('pages.index') }}" class="mr-4"
-                        ><i class="mr-1 icon ion-md-arrow-back"></i
-                    ></a>
+                    ><i class="mr-1 icon ion-md-arrow-back"></i
+                        ></a>
                 </x-slot>
 
                 <div class="mt-4 px-4">
@@ -35,21 +35,21 @@
                         @lang('crud.common.back')
                     </a>
 
-                    @can('create', App\Models\Page::class)
-                    <a href="{{ route('pages.create') }}" class="button">
-                        <i class="mr-1 icon ion-md-add"></i>
-                        @lang('crud.common.create')
-                    </a>
+                    @can('create', WebVideo\Models\Page::class)
+                        <a href="{{ route('pages.create') }}" class="button">
+                            <i class="mr-1 icon ion-md-add"></i>
+                            @lang('crud.common.create')
+                        </a>
                     @endcan
                 </div>
             </x-partials.card>
 
-            @can('view-any', App\Models\Section::class)
-            <x-partials.card class="mt-5">
-                <x-slot name="title"> Sections </x-slot>
+            @can('view-any', WebVideo\Models\Section::class)
+                <x-partials.card class="mt-5">
+                    <x-slot name="title"> Sections</x-slot>
 
-                <livewire:page-sections-detail :page="$page" />
-            </x-partials.card>
+                    <livewire:page-sections-detail :page="$page"/>
+                </x-partials.card>
             @endcan
         </div>
     </div>

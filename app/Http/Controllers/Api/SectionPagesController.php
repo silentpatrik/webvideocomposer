@@ -1,17 +1,18 @@
 <?php
+
 namespace App\Http\Controllers\Api;
 
-use App\Models\Page;
-use App\Models\Section;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PageCollection;
+use Illuminate\Http\Request;
+use WebVideo\Models\Page;
+use WebVideo\Models\Section;
 
 class SectionPagesController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request, Section $section)
@@ -31,8 +32,8 @@ class SectionPagesController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
-     * @param \App\Models\Page $page
+     * @param \WebVideo\Models\Section $section
+     * @param \WebVideo\Models\Page $page
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, Section $section, Page $page)
@@ -46,8 +47,8 @@ class SectionPagesController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
-     * @param \App\Models\Page $page
+     * @param \WebVideo\Models\Section $section
+     * @param \WebVideo\Models\Page $page
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Section $section, Page $page)

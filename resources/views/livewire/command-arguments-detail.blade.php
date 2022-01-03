@@ -1,20 +1,20 @@
 <div>
     <div>
-        @can('create', App\Models\Argument::class)
-        <button class="button" wire:click="newArgument">
-            <i class="mr-1 icon ion-md-add text-primary"></i>
-            @lang('crud.common.new')
-        </button>
-        @endcan @can('delete-any', App\Models\Argument::class)
-        <button
-            class="button button-danger"
-             {{ empty($selected) ? 'disabled' : '' }} 
-            onclick="confirm('Are you sure?') || event.stopImmediatePropagation()"
-            wire:click="destroySelected"
-        >
-            <i class="mr-1 icon ion-md-trash text-primary"></i>
-            @lang('crud.common.delete_selected')
-        </button>
+        @can('create', WebVideo\Models\Argument::class)
+            <button class="button" wire:click="newArgument">
+                <i class="mr-1 icon ion-md-add text-primary"></i>
+                @lang('crud.common.new')
+            </button>
+        @endcan @can('delete-any', WebVideo\Models\Argument::class)
+            <button
+                class="button button-danger"
+                {{ empty($selected) ? 'disabled' : '' }}
+                onclick="confirm('Are you sure?') || event.stopImmediatePropagation()"
+                wire:click="destroySelected"
+            >
+                <i class="mr-1 icon ion-md-trash text-primary"></i>
+                @lang('crud.common.delete_selected')
+            </button>
         @endcan
     </div>
 
@@ -80,29 +80,29 @@
     <div class="block w-full overflow-auto scrolling-touch mt-4">
         <table class="w-full max-w-full mb-4 bg-transparent">
             <thead class="text-gray-700">
-                <tr>
-                    <th class="px-4 py-3 text-left w-1">
-                        <input
-                            type="checkbox"
-                            wire:model="allSelected"
-                            wire:click="toggleFullSelection"
-                            title="{{ trans('crud.common.select_all') }}"
-                        />
-                    </th>
-                    <th class="px-4 py-3 text-left">
-                        @lang('crud.command_arguments.inputs.title')
-                    </th>
-                    <th class="px-4 py-3 text-left">
-                        @lang('crud.command_arguments.inputs.value')
-                    </th>
-                    <th class="px-4 py-3 text-left">
-                        @lang('crud.command_arguments.inputs.description')
-                    </th>
-                    <th></th>
-                </tr>
+            <tr>
+                <th class="px-4 py-3 text-left w-1">
+                    <input
+                        type="checkbox"
+                        wire:model="allSelected"
+                        wire:click="toggleFullSelection"
+                        title="{{ trans('crud.common.select_all') }}"
+                    />
+                </th>
+                <th class="px-4 py-3 text-left">
+                    @lang('crud.command_arguments.inputs.title')
+                </th>
+                <th class="px-4 py-3 text-left">
+                    @lang('crud.command_arguments.inputs.value')
+                </th>
+                <th class="px-4 py-3 text-left">
+                    @lang('crud.command_arguments.inputs.description')
+                </th>
+                <th></th>
+            </tr>
             </thead>
             <tbody class="text-gray-600">
-                @foreach ($arguments as $argument)
+            @foreach ($arguments as $argument)
                 <tr class="hover:bg-gray-100">
                     <td class="px-4 py-3 text-left">
                         <input
@@ -127,25 +127,25 @@
                             class="relative inline-flex align-middle"
                         >
                             @can('update', $argument)
-                            <button
-                                type="button"
-                                class="button"
-                                wire:click="editArgument({{ $argument->id }})"
-                            >
-                                <i class="icon ion-md-create"></i>
-                            </button>
+                                <button
+                                    type="button"
+                                    class="button"
+                                    wire:click="editArgument({{ $argument->id }})"
+                                >
+                                    <i class="icon ion-md-create"></i>
+                                </button>
                             @endcan
                         </div>
                     </td>
                 </tr>
-                @endforeach
+            @endforeach
             </tbody>
             <tfoot>
-                <tr>
-                    <td colspan="4">
-                        <div class="mt-10 px-4">{{ $arguments->render() }}</div>
-                    </td>
-                </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="mt-10 px-4">{{ $arguments->render() }}</div>
+                </td>
+            </tr>
             </tfoot>
         </table>
     </div>

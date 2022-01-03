@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Argument;
-use Illuminate\Http\Request;
 use App\Http\Requests\ArgumentStoreRequest;
 use App\Http\Requests\ArgumentUpdateRequest;
+use Illuminate\Http\Request;
+use WebVideo\Models\Argument;
 
 class ArgumentController extends Controller
 {
@@ -57,7 +57,7 @@ class ArgumentController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Argument $argument
+     * @param \WebVideo\Models\Argument $argument
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Argument $argument)
@@ -69,7 +69,7 @@ class ArgumentController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Argument $argument
+     * @param \WebVideo\Models\Argument $argument
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, Argument $argument)
@@ -81,7 +81,7 @@ class ArgumentController extends Controller
 
     /**
      * @param \App\Http\Requests\ArgumentUpdateRequest $request
-     * @param \App\Models\Argument $argument
+     * @param \WebVideo\Models\Argument $argument
      * @return \Illuminate\Http\Response
      */
     public function update(ArgumentUpdateRequest $request, Argument $argument)
@@ -99,7 +99,7 @@ class ArgumentController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Argument $argument
+     * @param \WebVideo\Models\Argument $argument
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Argument $argument)

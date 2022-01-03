@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Factories;
+namespace WebVideo\Database\Factories;
 
-use App\Models\Section;
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use WebVideo\Models\Page;
+use WebVideo\Models\Section;
 
 class SectionFactory extends Factory
 {
@@ -25,7 +25,7 @@ class SectionFactory extends Factory
         return [
             'title' => $this->faker->sentence(10),
             'content' => $this->faker->text,
-            'page_id' => \App\Models\Page::factory(),
+            'page_id' => Page::factory(),
         ];
     }
 }

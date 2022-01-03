@@ -1,16 +1,17 @@
 <?php
+
 namespace App\Http\Controllers\Api;
 
-use App\Models\Section;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\SectionCollection;
+use Illuminate\Http\Request;
+use WebVideo\Models\Section;
 
 class SectionSectionsController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request, Section $section)
@@ -30,8 +31,8 @@ class SectionSectionsController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, Section $section, Section $section)
@@ -45,15 +46,16 @@ class SectionSectionsController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Section $section
-     * @param \App\Models\Section $section
+     * @param \WebVideo\Models\Section $section
+     * @param \WebVideo\Models\Section $section
      * @return \Illuminate\Http\Response
      */
     public function destroy(
         Request $request,
         Section $section,
         Section $section
-    ) {
+    )
+    {
         $this->authorize('update', $section);
 
         $section->sections()->detach($section);

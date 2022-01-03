@@ -2,10 +2,10 @@
 
 namespace App\Http\Livewire;
 
-use Livewire\Component;
-use App\Models\Command;
-use App\Models\Argument;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Livewire\Component;
+use WebVideo\Models\Argument;
+use WebVideo\Models\Command;
 
 class CommandArgumentsDetail extends Component
 {

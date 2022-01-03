@@ -2,10 +2,10 @@
 
 namespace App\Http\Livewire;
 
-use Livewire\Component;
-use App\Models\Command;
-use App\Models\RenderPipeline;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Livewire\Component;
+use WebVideo\Models\Command;
+use WebVideo\Models\RenderPipeline;
 
 class RenderPipelineCommandsDetail extends Component
 {

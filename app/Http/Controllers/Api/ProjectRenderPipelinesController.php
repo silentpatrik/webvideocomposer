@@ -1,17 +1,18 @@
 <?php
+
 namespace App\Http\Controllers\Api;
 
-use App\Models\Project;
-use Illuminate\Http\Request;
-use App\Models\RenderPipeline;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\RenderPipelineCollection;
+use Illuminate\Http\Request;
+use WebVideo\Models\Project;
+use WebVideo\Models\RenderPipeline;
 
 class ProjectRenderPipelinesController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
+     * @param \WebVideo\Models\Project $project
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request, Project $project)
@@ -31,15 +32,16 @@ class ProjectRenderPipelinesController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
-     * @param \App\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\Project $project
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
      * @return \Illuminate\Http\Response
      */
     public function store(
-        Request $request,
-        Project $project,
+        Request        $request,
+        Project        $project,
         RenderPipeline $renderPipeline
-    ) {
+    )
+    {
         $this->authorize('update', $project);
 
         $project
@@ -51,15 +53,16 @@ class ProjectRenderPipelinesController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Project $project
-     * @param \App\Models\RenderPipeline $renderPipeline
+     * @param \WebVideo\Models\Project $project
+     * @param \WebVideo\Models\RenderPipeline $renderPipeline
      * @return \Illuminate\Http\Response
      */
     public function destroy(
-        Request $request,
-        Project $project,
+        Request        $request,
+        Project        $project,
         RenderPipeline $renderPipeline
-    ) {
+    )
+    {
         $this->authorize('update', $project);
 
         $project->renderPipelines()->detach($renderPipeline);

@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\Command;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\ArgumentResource;
 use App\Http\Resources\ArgumentCollection;
+use App\Http\Resources\ArgumentResource;
+use Illuminate\Http\Request;
+use WebVideo\Models\Command;
 
 class CommandArgumentsController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Command $command
+     * @param \WebVideo\Models\Command $command
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request, Command $command)
@@ -32,7 +32,7 @@ class CommandArgumentsController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Command $command
+     * @param \WebVideo\Models\Command $command
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, Command $command)
